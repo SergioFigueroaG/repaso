@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Facturaventa</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre cliente</th>
+      <th>Nombre producto</th>
+      <th>Nit</th>
+      <th>Cedula</th>
+      <th>Subtotal</th>
+      <th>Total</th>
+      <th>Direccion</th>
+      <th>Iva</th>
+      <th>Fecha</th>
+      <th>Telefono</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facturaventa.each do |facturaventum| %>
+      <tr>
+        <td><%= facturaventum.nombre_cliente %></td>
+        <td><%= facturaventum.nombre_producto %></td>
+        <td><%= facturaventum.nit %></td>
+        <td><%= facturaventum.cedula %></td>
+        <td><%= facturaventum.subtotal %></td>
+        <td><%= facturaventum.total %></td>
+        <td><%= facturaventum.direccion %></td>
+        <td><%= facturaventum.iva %></td>
+        <td><%= facturaventum.fecha %></td>
+        <td><%= facturaventum.telefono %></td>
+        <td><%= link_to 'Show', facturaventum %></td>
+        <td><%= link_to 'Edit', edit_facturaventum_path(facturaventum) %></td>
+        <td><%= link_to 'Destroy', facturaventum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Facturaventum', new_facturaventum_path %>

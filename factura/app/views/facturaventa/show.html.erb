@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre cliente:</strong>
+  <%= @facturaventum.nombre_cliente %>
+</p>
+
+<p>
+  <strong>Nombre producto:</strong>
+  <%= @facturaventum.nombre_producto %>
+</p>
+
+<p>
+  <strong>Nit:</strong>
+  <%= @facturaventum.nit %>
+</p>
+
+<p>
+  <strong>Cedula:</strong>
+  <%= @facturaventum.cedula %>
+</p>
+
+<p>
+  <strong>Subtotal:</strong>
+  <%= @facturaventum.subtotal %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @facturaventum.total %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @facturaventum.direccion %>
+</p>
+
+<p>
+  <strong>Iva:</strong>
+  <%= @facturaventum.iva %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @facturaventum.fecha %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @facturaventum.telefono %>
+</p>
+
+<%= link_to 'Edit', edit_facturaventum_path(@facturaventum) %> |
+<%= link_to 'Back', facturaventa_path %>
